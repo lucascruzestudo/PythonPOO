@@ -20,6 +20,21 @@ class Conta:
         self.sacar(valor)
         destino.depositar(valor)
 
+    def get_saldo(self):
+        return self.__saldo
+    
+    def get_limite(self):
+        return self.__limite
+    
+    def get_titular(self):
+        return self.__titular
+    
+    def get_numero(self):
+        return self.__numero
+    
+    def set_limite(self, limite):
+        self.__limite = limite
+
     
     
 
