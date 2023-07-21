@@ -3,7 +3,7 @@ from random import randint
 class Character:
 
     def __init__(self, user):
-        self._user = user.captalize()
+        self._user = user.capitalize()
         self._level = 1
         self._attack_type = 'Fist'
 
@@ -28,6 +28,10 @@ class Character:
     
     def attack(self):
         print(f"{self.user} uses {self.attack_type} to attack.")
+
+    @staticmethod
+    def info():
+        print('Esse é um personagem do meu RPG')
     
 class Warrior(Character):
 
