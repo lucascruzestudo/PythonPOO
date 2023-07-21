@@ -1,11 +1,11 @@
 class Conta: 
 
-    def __init__(self, numero, titular, saldo, limite=1000.0):
+    def __init__(self, numero, titular, saldo):
         print(f"Construiu o objeto {self}")
         self.__numero = numero
         self.__titular = titular
         self.__saldo = saldo
-        self.__limite = limite
+        self.__limite = 1000
 
     def extrato(self):
         print(f"Saldo de {self.__titular}: R$ {self.__saldo}")
@@ -42,6 +42,10 @@ class Conta:
     @property
     def limite(self):
         return self.__limite
+    
+    @staticmethod
+    def codigo():
+        return "001"
 
     @limite.setter
     def limite(self, limite):
